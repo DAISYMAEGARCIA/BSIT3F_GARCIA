@@ -1,0 +1,181 @@
+body {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+.head button {
+  font-weight: bold;
+  font-size: 15px;
+  position: relative; 
+  color: black;
+  margin-left: 7%;
+  margin-top: 2%;
+  height: 50px;
+  background: none;
+  border: none;
+  overflow: hidden; 
+}
+
+.head button::after {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  bottom: 0; 
+  height: 2px; 
+  width: 100%; 
+  background-color: black; 
+  transform: translateX(-100%); 
+  transition: transform 0.3s ease; 
+}
+
+.head button:hover::after {
+  transform: translateX(0);
+}
+
+.head button:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.imgprofile img {
+   width: 370px; /* Set a fixed width */
+  height: 370px;
+  margin-left: 20%; 
+  margin-top: 20%;
+  border-radius: 50%;
+}
+
+.careerobjectives {
+  margin-left: 10%; /* Adjust spacing between image and text */
+  margin-top: 5%;
+ }
+
+.careerobjectives h2{
+ 	font-size: 40px;
+ }
+
+ .careerobjectives h3{
+ 	font-size: 30px;
+ }
+
+ .careerobjectives h5{
+ 	font-size: 20px;
+ }
+
+ .social-icons a {
+    font-size: 30px; 
+    margin: 0 10px; 
+    color: black;
+}
+
+.social-icons a:hover {
+    color: white; 
+}
+
+.container h6 {
+	margin-left: 1.5%;
+	margin-top: 1.5%;
+}
+
+.skills h2 {
+  font-size: 25px;
+  position: relative; 
+  top: 100px;
+  text-align: center;
+  color: black;
+  font-weight: 600; 
+  margin-bottom: 30px; 
+  letter-spacing: 1.5px; 
+  text-transform: capitalize; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.skills h2::before {
+  content: "•";
+  position: absolute;
+  left: -40px; 
+  top: 50%;
+  transform: translateY(-50%); 
+  font-size: 40px; 
+  color: gray; 
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.skills h2:hover {
+  color: gray; /* Change text color to a darker blue on hover */
+  transform: translateY(-5px); /* Subtle upward movement when hovering */
+}
+
+.skills h2:hover::before {
+  transform: translateY(-50%) scale(1.4); 
+  color: gray; 
+}
+
+.section-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px; /* Increased space between sections */
+    border-bottom: 3px solid #fff; /* Slightly thicker border for emphasis */
+    padding-bottom: 5px;
+    color: black; /* Slightly lighter white for better contrast */
+    text-align: center; /* Center the section title */
+}
+
+.subsection {
+    margin-bottom: 25px; /* More space between subsections */
+    background-color: rgba(0, 0, 0, 0.2); /* Light background for better readability */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for subsections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.details {
+    margin-left: 20px;
+    color: black; /* Slightly lighter white for readability */
+    font-size: 16px; /* Slightly larger font for details */
+}
+
+.details b {
+    display: inline-block;
+    width: 180px; /* Adjusted width for better alignment */
+    color: black; /* Light gray for labels */
+    font-weight: bold;
+}
+
+.experience h2 {
+  font-size: 25px;
+  position: relative; 
+  top: 100px;
+  text-align: center;
+  color: black;
+  font-weight: 600; 
+  margin-bottom: 30px; 
+  letter-spacing: 1.5px; 
+  text-transform: capitalize; 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.section-title-we {
+font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    color: black;
+    text-align: center;
+    margin-top: 80px; /* Increased space above the title */
+}
+
+.subsection-we {
+    margin-bottom: 25px; /* More space between subsections */
+    background-color: rgba(0, 0, 0, 0.2); /* Light background for better readability */
+    padding: 15px;
+    border-radius: 8px; /* Rounded corners for subsections */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
