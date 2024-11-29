@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>color and visibility</title>
+</head>
+<body>
+    <h2 id="text1">PARAGRAPH</h2>
+    <button onclick="toggles()"> TOGGLES</button>
+    
+    <script>
+        function toggles() {
+            const text = document.getElementById("text1");
+
+         
+            if (text.style.display === "none") {
+                text.style.display = "block"; 
+            } else {
+                text.style.display = "none"; 
+            }
+        }
+    </script>
+
+</body>
+</html>
